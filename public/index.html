@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secure Chat App</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: Arial; padding: 1rem; background: #f4f4f4; }
+    #messages { height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 0.5rem; background: white; }
+    input, button { padding: 0.5rem; margin-top: 1rem; width: 100%; }
+  </style>
+</head>
+<body>
+  <h2>Secure Chat</h2>
+  <div>
+    <label>Username:</label>
+    <input id="username" type="text">
+    <button onclick="register()">Register</button>
+  </div>
+
+  <div id="chatArea" style="display:none;">
+    <div id="messages"></div>
+    <input id="messageInput" type="text" placeholder="Enter message">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>
